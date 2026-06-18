@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: Inter, "Inter var", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-display: "Arial Black", Impact, ui-sans-serif, system-ui, sans-serif;
+  --font-racing: "Arial Narrow", "Roboto Condensed", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-race-dark: #09090b;
+  --color-race-darker: #020203;
+  --color-race-red: #ff2e2e;
+  --color-race-yellow: #facc15;
+  --color-race-blue: #06b6d4;
+  --color-race-gray: #1f1f23;
+  
+  --animate-pulse-slow: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-float: float 6s ease-in-out infinite;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    line-height: 1.5;
+    letter-spacing: -0.01em;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    text-wrap: balance;
+  }
+
+  p,
+  li {
+    text-wrap: pretty;
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Custom Checkered Flags and Dot Patterns */
+.bg-checkered {
+  background-image: 
+    linear-gradient(45deg, #18181b 25%, transparent 25%), 
+    linear-gradient(-45deg, #18181b 25%, transparent 25%), 
+    linear-gradient(45deg, transparent 75%, #18181b 75%), 
+    linear-gradient(-45deg, transparent 75%, #18181b 75%);
+  background-size: 20px 20px;
+  background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+}
+
+.bg-checkered-light {
+  background-image: 
+    linear-gradient(45deg, #f4f4f5 25%, transparent 25%), 
+    linear-gradient(-45deg, #f4f4f5 25%, transparent 25%), 
+    linear-gradient(45deg, transparent 75%, #f4f4f5 75%), 
+    linear-gradient(-45deg, transparent 75%, #f4f4f5 75%);
+  background-size: 20px 20px;
+  background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+}
+
+.bg-grid-pattern {
+  background-size: 30px 30px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 46, 46, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 46, 46, 0.05) 1px, transparent 1px);
+}
+
+.bg-speed-lines {
+  background: repeating-linear-gradient(
+    90deg,
+    transparent,
+    transparent 40px,
+    rgba(255, 46, 46, 0.1) 40px,
+    rgba(255, 46, 46, 0.1) 42px
+  );
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #020203;
+}
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ff2e2e;
+}
