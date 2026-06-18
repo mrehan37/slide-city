@@ -128,19 +128,19 @@ export default function Hero({ onBookClick, onViewPackagesClick }: HeroProps) {
               <button
                 onClick={onBookClick}
                 id="hero-cta-book"
-                className="bg-red-600 hover:bg-red-700 text-white py-4 px-8 rounded-none text-sm font-black uppercase tracking-widest shadow-lg transform -skew-x-12 transition-all duration-300 cursor-pointer"
+                className="w-full sm:w-auto bg-red-600 hover:bg-red-700 text-white py-4 px-6 sm:px-8 rounded-none text-xs sm:text-sm font-black uppercase tracking-wide sm:tracking-widest shadow-lg transform -skew-x-12 transition-all duration-300 cursor-pointer"
               >
-                <span className="inline-flex skew-x-[12deg] items-center justify-center gap-2 whitespace-nowrap">
-                  <Flag className="w-4 h-4" /> Book A Race
+                <span className="inline-flex skew-x-[12deg] items-center justify-center gap-2 text-center leading-tight">
+                  <Flag className="w-4 h-4 flex-shrink-0" /> Book A Race
                 </span>
               </button>
 
               <button
                 onClick={onViewPackagesClick}
                 id="hero-cta-packages"
-                className="bg-zinc-950 hover:bg-zinc-900 text-white border border-zinc-800 py-4 px-8 rounded-none text-sm font-black uppercase tracking-widest transform -skew-x-12 transition-all duration-300 cursor-pointer"
+                className="w-full sm:w-auto bg-zinc-950 hover:bg-zinc-900 text-white border border-zinc-800 py-4 px-6 sm:px-8 rounded-none text-xs sm:text-sm font-black uppercase tracking-wide sm:tracking-widest transform -skew-x-12 transition-all duration-300 cursor-pointer"
               >
-                <span className="inline-block skew-x-[12deg]">
+                <span className="inline-block skew-x-[12deg] text-center leading-tight">
                   View Packages
                 </span>
               </button>
@@ -215,7 +215,7 @@ export default function Hero({ onBookClick, onViewPackagesClick }: HeroProps) {
 
               <button 
                 onClick={onBookClick}
-                className="w-full mt-4 bg-zinc-900 hover:bg-red-600 hover:text-white text-zinc-350 py-3 rounded-none text-sm uppercase font-extrabold tracking-widest border border-zinc-850 hover:border-red-600 transition-all duration-300"
+                className="w-full mt-4 bg-zinc-900 hover:bg-red-600 hover:text-white text-zinc-350 py-3 px-3 rounded-none text-xs sm:text-sm uppercase font-extrabold tracking-wide sm:tracking-widest border border-zinc-850 hover:border-red-600 transition-all duration-300"
               >
                 Register Your Team Grid
               </button>

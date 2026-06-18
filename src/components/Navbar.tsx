@@ -134,7 +134,8 @@ export default function Navbar({ onBookClick, onViewPackagesClick }: NavbarProps
             <button
               onClick={() => setIsOpen(!isOpen)}
               id="mobile-menu-toggle"
-              className="p-1.5 rounded-none text-zinc-400 hover:text-white hover:bg-zinc-90 w-full bg-zinc-950 border border-zinc-800 focus:outline-none"
+              className="p-2 rounded-none text-zinc-400 hover:text-white hover:bg-zinc-900 bg-zinc-950 border border-zinc-800 focus:outline-none"
+              aria-label={isOpen ? 'Close menu' : 'Open menu'}
             >
               {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
             </button>
@@ -171,9 +172,9 @@ export default function Navbar({ onBookClick, onViewPackagesClick }: NavbarProps
                 onBookClick();
               }}
               id="mobile-nav-book"
-              className="w-full bg-red-600 hover:bg-red-700 text-white py-3 px-4 rounded-none text-sm uppercase font-extrabold italic tracking-widest text-center transform -skew-x-12 cursor-pointer"
+              className="w-full bg-red-600 hover:bg-red-700 text-white py-3 px-4 rounded-none text-xs sm:text-sm uppercase font-extrabold italic tracking-wide sm:tracking-widest text-center transform -skew-x-12 cursor-pointer"
             >
-              <span className="inline-block skew-x-12">Book A Race Now</span>
+              <span className="inline-block skew-x-12 leading-tight">Book A Race Now</span>
             </button>
             <button
               onClick={() => {
@@ -181,7 +182,7 @@ export default function Navbar({ onBookClick, onViewPackagesClick }: NavbarProps
                 onViewPackagesClick();
               }}
               id="mobile-nav-packages"
-              className="w-full bg-zinc-900 hover:bg-zinc-800 text-zinc-300 py-3 px-4 rounded-none text-sm uppercase font-extrabold tracking-widest text-center border border-zinc-800"
+              className="w-full bg-zinc-900 hover:bg-zinc-800 text-zinc-300 py-3 px-4 rounded-none text-xs sm:text-sm uppercase font-extrabold tracking-wide sm:tracking-widest text-center border border-zinc-800 leading-tight"
             >
               View Racing Packages
             </button>

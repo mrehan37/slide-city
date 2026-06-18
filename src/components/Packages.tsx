@@ -146,14 +146,14 @@ export default function Packages({ onChoosePackage }: PackagesProps) {
                 <button
                   onClick={() => onChoosePackage(pkg.name, pkg.price)}
                   id={`pkg-choose-btn-${pkg.id}`}
-                  className={`w-full py-3.5 rounded-none text-sm uppercase font-extrabold tracking-wider transition-all duration-300 transform -skew-x-12 cursor-pointer ${
+                  className={`w-full py-3.5 px-3 rounded-none text-xs sm:text-sm uppercase font-extrabold tracking-wide sm:tracking-wider transition-all duration-300 transform -skew-x-12 cursor-pointer ${
                     pkg.popular
                       ? 'bg-red-600 hover:bg-red-750 text-white'
                       : 'bg-zinc-900 hover:bg-zinc-800 text-zinc-350 border border-zinc-800'
                   }`}
                 >
-                  <span className="inline-flex skew-x-12 items-center justify-center gap-1.5 whitespace-nowrap">
-                    Choose Package <ArrowRight className="w-3.5 h-3.5" />
+                  <span className="inline-flex skew-x-12 items-center justify-center gap-1.5 text-center leading-tight">
+                    Choose Package <ArrowRight className="w-3.5 h-3.5 flex-shrink-0" />
                   </span>
                 </button>
               </div>
@@ -372,9 +372,9 @@ export default function Packages({ onChoosePackage }: PackagesProps) {
                 <button
                   onClick={handleCustomSubmit}
                   id="calc-submit-btn"
-                  className="w-full bg-red-650 hover:bg-red-750 text-white text-xs py-3.5 px-4 rounded-none uppercase font-black tracking-widest transition-all cursor-pointer transform -skew-x-12"
+                  className="w-full bg-red-650 hover:bg-red-750 text-white text-xs py-3.5 px-4 rounded-none uppercase font-black tracking-wide sm:tracking-widest transition-all cursor-pointer transform -skew-x-12"
                 >
-                  <span className="inline-block skew-x-12">
+                  <span className="inline-block skew-x-12 text-center leading-tight">
                     Configure and Book Now
                   </span>
                 </button>

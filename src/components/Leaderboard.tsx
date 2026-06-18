@@ -227,10 +227,10 @@ export default function Leaderboard() {
         <button
           onClick={simulateLap}
           id="ldr-btn-battle"
-          className="flex-grow bg-red-600 hover:bg-red-750 text-white text-xs font-black uppercase tracking-widest py-3.5 px-4 rounded-none flex items-center justify-center gap-2 transition-all cursor-pointer transform -skew-x-12"
+          className="flex-grow bg-red-600 hover:bg-red-750 text-white text-xs font-black uppercase tracking-wide sm:tracking-widest py-3.5 px-4 rounded-none flex items-center justify-center gap-2 transition-all cursor-pointer transform -skew-x-12"
         >
-          <span className="inline-flex skew-x-12 items-center gap-2 whitespace-nowrap">
-            <Swords className="w-3.5 h-3.5" /> Simulate Sample Battle
+          <span className="inline-flex skew-x-12 items-center justify-center gap-2 text-center leading-tight">
+            <Swords className="w-3.5 h-3.5 flex-shrink-0" /> Simulate Sample Battle
           </span>
         </button>
       </div>

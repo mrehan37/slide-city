@@ -215,10 +215,10 @@ export default function Events({ onEventBookSelect }: EventsProps) {
                     <button
                       onClick={() => onEventBookSelect(currentTab.name)}
                       id={`event-inquire-${currentTab.id}`}
-                      className="w-full sm:w-auto px-6 py-3.5 bg-red-600 hover:bg-red-750 text-white rounded-none text-sm uppercase font-extrabold tracking-widest transition-all text-center flex items-center justify-center gap-2 cursor-pointer transform -skew-x-12"
+                      className="w-full sm:w-auto px-5 sm:px-6 py-3.5 bg-red-600 hover:bg-red-750 text-white rounded-none text-xs sm:text-sm uppercase font-extrabold tracking-wide sm:tracking-widest transition-all text-center flex items-center justify-center gap-2 cursor-pointer transform -skew-x-12"
                     >
-                      <span className="inline-flex skew-x-12 items-center gap-2 whitespace-nowrap">
-                        Inquire About {currentTab.name} <ChevronRight className="w-3.5 h-3.5" />
+                      <span className="inline-flex skew-x-12 items-center justify-center gap-2 text-center leading-tight">
+                        Inquire About {currentTab.name} <ChevronRight className="w-3.5 h-3.5 flex-shrink-0" />
                       </span>
                     </button>
                   </div>

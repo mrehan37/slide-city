@@ -180,20 +180,20 @@ export default function App() {
               <button
                 onClick={scrollToContact}
                 id="cta-booknow-btn"
-                className="w-full sm:w-auto bg-black text-white hover:bg-zinc-900 py-4 px-10 rounded-xl text-sm uppercase font-black tracking-widest shadow-2xl transition-all skew-x-[-10deg] cursor-pointer"
+                className="w-full sm:w-auto bg-black text-white hover:bg-zinc-900 py-4 px-6 sm:px-10 rounded-xl text-xs sm:text-sm uppercase font-black tracking-wide sm:tracking-widest shadow-2xl transition-all skew-x-[-10deg] cursor-pointer"
               >
-                <span className="inline-flex skew-x-[10deg] items-center justify-center gap-2 whitespace-nowrap">
-                  <Flag className="w-4 h-4 text-race-red" /> Book Now
+                <span className="inline-flex skew-x-[10deg] items-center justify-center gap-2 text-center leading-tight">
+                  <Flag className="w-4 h-4 flex-shrink-0 text-race-red" /> Book Now
                 </span>
               </button>
 
               <button
                 onClick={() => setShowCallModal(true)}
                 id="cta-callus-btn"
-                className="w-full sm:w-auto bg-white text-black hover:bg-zinc-100 py-4 px-10 rounded-xl text-sm uppercase font-black tracking-widest shadow-2xl transition-all skew-x-[-10deg] cursor-pointer"
+                className="w-full sm:w-auto bg-white text-black hover:bg-zinc-100 py-4 px-6 sm:px-10 rounded-xl text-xs sm:text-sm uppercase font-black tracking-wide sm:tracking-widest shadow-2xl transition-all skew-x-[-10deg] cursor-pointer"
               >
-                <span className="inline-flex skew-x-[10deg] items-center justify-center gap-2 whitespace-nowrap">
-                  <Mail className="w-4 h-4 text-race-blue" /> Email Us Directly
+                <span className="inline-flex skew-x-[10deg] items-center justify-center gap-2 text-center leading-tight">
+                  <Mail className="w-4 h-4 flex-shrink-0 text-race-blue" /> Email Us Directly
                 </span>
               </button>
             </div>

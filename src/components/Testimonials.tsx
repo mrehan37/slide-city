@@ -172,10 +172,10 @@ export default function Testimonials() {
               href={sourceUrl}
               target="_blank"
               rel="noreferrer"
-              className="bg-red-600 hover:bg-red-700 text-white py-3 px-6 rounded-none text-sm font-black uppercase tracking-widest transform -skew-x-12 cursor-pointer"
+              className="bg-red-600 hover:bg-red-700 text-white py-3 px-5 sm:px-6 rounded-none text-xs sm:text-sm font-black uppercase tracking-wide sm:tracking-widest transform -skew-x-12 cursor-pointer text-center"
             >
-              <span className="inline-flex skew-x-12 items-center gap-2 whitespace-nowrap">
-                View on Google <ExternalLink className="w-3.5 h-3.5" />
+              <span className="inline-flex skew-x-12 items-center justify-center gap-2 leading-tight">
+                View on Google <ExternalLink className="w-3.5 h-3.5 flex-shrink-0" />
               </span>
             </a>
           </div>
@@ -275,9 +275,9 @@ export default function Testimonials() {
           <div className="mt-8 flex justify-center">
             <button
               onClick={() => setShowAllReviews(!showAllReviews)}
-              className="bg-zinc-950 hover:bg-red-600 text-zinc-300 hover:text-white border border-zinc-800 hover:border-red-600 py-3 px-7 rounded-none text-sm font-black uppercase tracking-widest transform -skew-x-12 cursor-pointer transition-colors"
+              className="bg-zinc-950 hover:bg-red-600 text-zinc-300 hover:text-white border border-zinc-800 hover:border-red-600 py-3 px-5 sm:px-7 rounded-none text-xs sm:text-sm font-black uppercase tracking-wide sm:tracking-widest transform -skew-x-12 cursor-pointer transition-colors"
             >
-              <span className="inline-flex skew-x-12 items-center gap-2 whitespace-nowrap">
+              <span className="inline-flex skew-x-12 items-center justify-center gap-2 text-center leading-tight">
                 {showAllReviews ? 'Show Less Reviews' : `View More Reviews (${filteredReviews.length - INITIAL_REVIEW_COUNT})`}
               </span>
             </button>

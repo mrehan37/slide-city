@@ -17,6 +17,12 @@
 }
 
 @layer base {
+  *,
+  ::before,
+  ::after {
+    min-width: 0;
+  }
+
   html {
     scroll-behavior: smooth;
     text-rendering: optimizeLegibility;
@@ -40,6 +46,22 @@
   p,
   li {
     text-wrap: pretty;
+  }
+
+  button,
+  a {
+    overflow-wrap: anywhere;
+  }
+}
+
+@media (max-width: 640px) {
+  button .whitespace-nowrap,
+  a .whitespace-nowrap {
+    white-space: normal;
+  }
+
+  button {
+    letter-spacing: 0.06em;
   }
 }
 
